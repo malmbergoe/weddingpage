@@ -15,6 +15,21 @@
     border:1px solid red;
     width: 100%;
 }
+
+.topImg {
+    width:100%;
+    max-height:90vh;
+    overflow: hidden;
+}
+
+.topImg.picture {
+    width: 100%;
+    maxheight:auto;
+    margin:auto;
+    object-fit: none;
+    object-position: center;
+}
+
 @media only screen and (max-width: 600px) {
     .sidenav {
 	display:none;
