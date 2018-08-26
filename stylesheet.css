@@ -1,5 +1,16 @@
+:root{
+    --color-one: #9900b8;
+    --color-two: #ff74a4;
+    --color-three: #ffff80;
+    --color-four: #009933;
+}
+
 * {
     box-sizing:border-box;
+    scroll-behavior: smooth;
+    font-size: 15px;
+
+    font-family: 'Taviraj', serif;
 }
 
 .row::after{
@@ -12,34 +23,119 @@
 [class*="col-"] {
     float:left;
     padding:15px;
-    border:1px solid red;
     width: 100%;
+}
+
+
+.button {
+    background-color: var(--color-one);
+    border-radius:40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:30px;
+    padding-right: 30px;
+    color: white;
+    border: none;
+}
+
+.button:hover{
+    background-color: var(--color-two);
+}
+
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 10vh;
+    z-index: 99;
+    display: none;
 }
 
 .topImg {
     width:100%;
     max-height:90vh;
     overflow: hidden;
+    object-fit:contain;
+    position: relative;
+    justify-content: center;
 }
 
-.topImg.picture {
+.topImg img{
+    min-height:120vh;
     width: 100%;
-    maxheight:auto;
-    margin:auto;
-    object-fit: none;
-    object-position: center;
+    position: absolute;
+    bottom:-60px;
+    left:0%;
+    object-fit:cover;
 }
 
+
+
+:target {
+    display: block;
+    position: relative;
+    top: -10vh;
+    visibility: hidden;
+}
+
+
+/* navigation bar styling*/
 
 .navbartop{
-    display: none;
+    background-color: var(--color-one);
+    color: white;
+    height: 10vh;
+    min-height: 50px;
+    display: inline-block;
+    width: 100%;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
 }
+
+.navbartop > div {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    float: left;
+    width: 130px;
+    text-align: center;
+    
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+.navbartop >  div > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+
+    
+    color: white;
+    padding:10px;
+    height: 100%;
+}
+
+.navbartop > div  > a:hover{
+    background-color: var(--color-two);
+    text-decoration: none;
+}
+
+
+
 
 .navbarbottom{
     border: 1px solid blue;
     position: sticky;
     bottom: 0px;
 }
+
+
+
+/* end of navigation bar styling*/
 
 @media only screen and (max-width: 600px) {
     .sidenav {
@@ -50,27 +146,13 @@
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
 
     .sidenav {
 	height:100%;    
     }
     .navbartop{
-	border: 1px solid blue;
 	position: sticky;
 	top: 0px;
-	display:block;
     }
     .navbarbottom{
 	display: none;
@@ -80,27 +162,13 @@
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
 
     .sidenav {
 	height:100%;    
     }
     .navbartop{
-	border: 1px solid blue;
 	position: sticky;
 	top: 0px
-	display:block;
     }
     .navbarbottom{
 	display: none;
@@ -108,35 +176,3 @@
 
 }
 
-/*
-    ----Remove the navbar's default margin-bottom and rounded borders---- 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    ---- Set height of the grid so .sidenav can be 100% (adjust as needed)----
-    .row.content {height: 450px}
-    
-    ---- Set gray background color and 100% height ----
-    .sidenav {
-      padding-top: 20px;
-      background-color: var(--main-bg-color);
-      height: 100%;
-    }
-    
-    ---- Set black background color, white text and some padding ----
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    ---- On small screens, set height to 'auto' for sidenav and grid ----
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }

@@ -5,105 +5,202 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Taviraj:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+
   <link rel="stylesheet" href="stylesheet.css" >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-
-
-
-
-
+<body >
 
 <!-- this is the top image-->
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div style="border: 1px solid red;" class="topImg">
+    <div style="height: 90vh;" class="topImg">
       <picture>
-	<source media="(min-width: 650px)" srcset="images/shark.png">
-	<source media="(min-width: 450px)" srcset="images/shark-small.jpg">
-	<img src="images/shark.png" alt="left shark is awesome!">
+	<source sizes="10vh" media="(min-width: 650px)" srcset="images/vaddo_brygga.jpg">
+	<source media="(min-width: 450px)" srcset="images/vaddo_brygga.jpg">
+	<img src="images/cartoon_bunny.svg" alt="left shark is awesome!">
       </picture>
+      <div style="position:absolute; top:50%;left:50%;transform: translate(-50%,-70%);">
+	<h1>
+	  Välkommen till Mats och Karins bröllopsfest!!
+	</h1>
+	<button class="button" onclick="document.getElementById('kontakt').scrollIntoView();">
+	  Klart man vill komma!
+	</button>
+      </div>
     </div>
   </div>
 </div>
 
 
-
-
-
-
 <!--this is the navigation bar-->
-<nav class="navbartop">
-  <ul>
-    <li>home</li>
-    <li>contact</li>
-    <li>boobs</li>
-  </ul>
-</nav>
+<div class="navbartop">
+    <div><a href="#hype">Hype</a></div>
+    <div><a href="#boendet">Stället</a></div>
+    <div><a href="#info">Bra Att Veta</a></div>
+    <div><a href="#presenter">Presenter</a></div>
+    <div><a href="#kontakt">Kontakt</a></div>
 
-<!--
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
+  <div style="float: right; width: 300px; text-align:right; border-style: solid; border-color: black; border-width: 2px;">
+    right counter: <div id="demo"></div>
   </div>
-</nav>
--->
-
-
+</div>
 
 
 <!--this is the main text body-->  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-2 col-s-2 sidenav">
-      <p>left side</p>
+<div style="display:grid; grid-template-rows:100%; grid-template-columns:16.66% auto 16.66%;">    
+    <div class="sidenav" style="background-image:url('images/sidebar.svg'); background-size:contain;background-repeat:repeat-y;flex-grow:1; transform:scaleX(-1);z-index:-1;">
+      <p>left</p>
     </div>
-    <div class="col-8 col-s-8 text-left"> 
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div style="padding-left: 40px; padding-right:40px;"> 
+      <h1>
+	<a class="anchor" id="home"></a>Welcome</h1>
+      <div class="col-12">
+	<div class="col-3" style="border: none; height: 50px;background-color:var(--color-one)"> <p> Color one</p></div>
+	<div class="col-3" style="border: none;height: 50px; background-color:var(--color-two)"><p> Color two</p></div>
+	<div class="col-3" style="border: none;height: 50px;background-color:var(--color-three)"><p> Color three</p></div>
+	<div class="col-3" style="border: none;height: 50px;background-color:var(--color-four)"><p> Color four</p></div>
+      </div>
+
+      <p>Information om oss. </br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <hr>
+      <h2>
+	<a class="anchor" id="hype"></a>
+	Hype
+      </h2>
+      <p>länk till facebookgrupp. där finns filmer, texter etc för att hypea festen!! möjighet att likea och kommentera på roliga inlägg</p>
+
+
+
+
+      <hr>
+      <h2>
+	<a class="anchor" id="boendet"></a>
+	Stället
+      </h2>
+      <p>
+	Bröllopsfesten kommer att hållas på <a href="https://www.vaddokursgard.se/">Väddö Kursgård</a>. Det är en liten stugby vid vattnet, och vi kommer att ha hela stället för oss själva hela helgen.
+      </p>
+      <h4>Hitta till Väddö Kursgård</h4>
+      <p>För dig som åker bil kan du fylla i din startposition <a href="https://www.google.se/maps/dir//V%C3%A4dd%C3%B6+Kursg%C3%A5rd,+V%C3%A4dd%C3%B6/@59.9356874,18.8439398,13043m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x46f55564690a3afd:0x78880007e1d7875!2m2!1d18.913979!2d59.935706!3e2">här</a> så öppnas en vägbeskrivning med Google Maps. Om du istället åker kollektivt tar du buss 636 mot Östersjö från Norrtälje busstation. Hoppa av vid hållplats Rangarnö. Från hållplatsen är det ca. 3 km promenad till väddö kursgård. Önskar du att bli hämtad från hållplatsen kan vi arrangera det, ta kontakt med oss i god tid innan din ankomst. Fullständig tidtabell och information om bussresan hittar du på SL:s hemsida.</p>
+      <hr>
+      <h2>
+	<a class="anchor" id="info"></a>
+	Bra Att Veta
+      </h2>
+	<h4>Klädsel</h4>
+	<p>Klädsel på bröllopet är lack och läder. För att inte missa den festliga stämningen så är det ok att utöka temat med glitter och fjädrar om man så önskar.</p>
+	<h4>Schema för helgen</h4>
+	<p>Redan på fredagen kan dom som vill komma ut. Då kommer vi att jogga runt nakna i skogen och spela trumpet. För den som inte vill så kan man istället grilla spädgris i bastun eller lägga pussel i huvudbygnaden.</p>
+	<h4>Barn</h4>
+	<p>Barn är välkommna, om man tar med dom som offergåva. När barnet väl blivit överlämnat ska man inte räkna med att det kommer komma tillbaka till stan vid liv. eventuellt kan man få tillbaks naglarna och oätliga inre organ, inlagda i ättika</p>
+	<h4>Tal</h4>
+	<p>Tal undanbedes. ja. det kan tyckas konstigt, men så e're! passa're inte så stick</p>
+	<h4>Kostnad</h4>
+	<p>kommer man på fredagen är man trevlig, då kostar det ingenting. kommer man på lördagen är man en stressig karriärsjävel, och då kan man fan betala typ 10000 per skalle.</p>
+
+
+
+      <hr>
+	<h2>
+	<a class="anchor" id="presenter"></a>
+	Presenter
+      </h2>
+      <p>
+	information om presenter och hur man ska göra/tänka.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h2>
+	<a class="anchor" id="kontakt"></a>
+	Kontakt
+      </h2>
+      
+      <p>Kontaktinformation: till toastmaster. för att osa.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
     </div>
-    <div class="col-2 col-s-2 sidenav">
-        <p>right side</p>
+    <div class="sidenav" style="background-image:url('images/sidebar.svg'); background-size:contain;background-repeat:repeat-y;flex-grow:1;">
+      <p>right</p>
     </div>
-  </div>
+  <button class="toTop button" onclick="scrollToTop()" id="toTop">
+    Upp
+  </button>
 </div>
 
 <nav class="navbarbottom">
   <ul>
-    <li>home</li>
+    <li>home</li>
     <li>contact</li>
     <li>boobs</li>
   </ul>
 </nav>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Footer Text. the footer can be placed within the grid element.</p>
 </footer>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("toTop").style.display = "block";
+    } else {
+        document.getElementById("toTop").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+
+
+<!-- Display the countdown timer in an element -->
+
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 31, 2019 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
 
 </body>
 </html>
