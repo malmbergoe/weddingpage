@@ -87,10 +87,6 @@
     min-height: 50px;
     display: inline-block;
     width: 100%;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: blue;
 }
 
 .navbartop > div {
@@ -100,11 +96,6 @@
     float: left;
     width: 130px;
     text-align: center;
-    
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
 }
 
 .navbartop >  div > a {
