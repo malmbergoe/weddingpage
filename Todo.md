@@ -1,0 +1,25 @@
+- fixa bilderna i sidebar
+- fixa för mobil
+- köpa domän
+- deploya till github
+- deploya till amazon
+- formulär för att osa
+- bättre copy innehåll
+  - fixa copy till "kontakt"
+  - welcome sektionen
+  - önskelista??
+- facebook-sida
+- fixa så att sidebar inte glitchar mellan tilingen
+- centera content i topImg
+- beslut om footer
+- icon/emblem?
+- fixa rosa färg till att matcha palett i sidebar
+- bryt ut java script till egen fil
+- fixa så att counter får initialvärde on load på main
+- centrera knappar i topnav bättre?
+- bygga för mobil
+  - fixa navbar
+  - fixa ikoner till navbar
+- bug: counter hamnar utanför topbar om man minskar rutan
+- fixa save the date för tablet
+- fixa save the date för mobil
