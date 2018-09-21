@@ -155,7 +155,9 @@
     /* For desktop: */
 
     .sidenav {
-	height:100%;    
+	height:100%;
+	padding: 0px;
+	border: none;
     }
     .navbartop{
 	position: sticky;
