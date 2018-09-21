@@ -14,8 +14,6 @@
 - beslut om footer
 - icon/emblem?
 - fixa rosa färg till att matcha palett i sidebar
-- bryt ut java script till egen fil
-- fixa så att counter får initialvärde on load på main
 - centrera knappar i topnav bättre?
 - bygga för mobil
   - fixa navbar
