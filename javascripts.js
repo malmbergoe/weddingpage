@@ -17,8 +17,8 @@ var input = function getCountDown() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = "Tid kvar: " + days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + "&nbspdagar<br>" + hours + "&nbsptimmar<br>"
+  + minutes + "&nbspminuter<br>" + seconds + "&nbsp;sekunder";
 
   // If the count down is finished, write some text
   if (distance < 0) {
