@@ -3,14 +3,19 @@
     --color-two: #ff74a4;
     --color-three: #ffff80;
     --color-four: #009933;
+
+    --s-font-size: 20px;
+    --m-font-size: 32px;
+    --l-font-size: 36px;
 }
 
 * {
     box-sizing:border-box;
     scroll-behavior: smooth;
-    font-size: 15px;
-
-    font-family: 'Taviraj', serif;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+/*    font-family: 'Faustina', serif; */
+/*    font-family: 'Taviraj', serif;*/
 }
 
 .row::after{
@@ -18,14 +23,6 @@
     clear:both;
     display:table;
 }
-
-/* For mobile phones: */
-[class*="col-"] {
-    float:left;
-    padding:15px;
-    width: 100%;
-}
-
 
 .button {
     background-color: var(--color-one);
@@ -42,21 +39,42 @@
     background-color: var(--color-two);
 }
 
-.toTop {
-    position: fixed;
-    bottom: 30px;
-    right: 10vh;
-    z-index: 99;
-    display: none;
+
+
+
+
+.grid-container-parent{
+    grid-template-columns: [left] 16.66% [middle] auto [right] 16.66% [end];
+    grid-template-rows: [top] auto [middle] auto [bottom] auto;
+    display: grid;
+    height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .topImg {
     width:100%;
+    height: 90vh;
     max-height:90vh;
     overflow: hidden;
     object-fit:contain;
     position: relative;
     justify-content: center;
+
+    grid-column-start: left;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: span 1;
 }
 
 .topImg img{
@@ -78,18 +96,200 @@
 }
 
 
-/* navigation bar styling*/
+.saveTheDateBanner {
+top: 40px;
+left: -180px;
+transform: rotate(-45deg);
+-webkit-transform(-45deg);
+background: white;
+position: fixed;
+z-index: 1000;
+max-height: 80px;
+min-height: 40px;
 
-.navbartop{
+height: 20vw;
+width: 500px;
+
+display: flex;
+display: -webkit-flex;
+vertical-align: middle;
+
+}
+
+.saveTheDateBanner div {
+    text-align: center;
+    margin:auto;
+    z-index: 1001;
+    font-size: 20px;
+    font-weight: 900; 
+}
+
+.saveTheDateBackgroundImage {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow:hidden;
+    height: 100;
+    width: 100%;
+    min-width: 200px;
+    z-index:-1;
+}
+
+.saveTheDateBackgroundImage img{
+    object-fit: scale-down;
+    opacity: 0.5;
+}
+
+
+.saveTheDateContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    height: 100%;
+    max-height: 800px;
+    max-width: 400px;
+    width: 100%;
+    color: white; 
+    background-color: var(--color-one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+}
+
+.saveTheDateCounter {
+    min-width: 180px;
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: visible;
+    align-self: baseline;
+
+}
+
+.saveTheDateCounter h1{
+    text-align: left;
+    vertical-align: top;
+    font-size: var(--s-font-size);
+    width: 120px;
+}
+
+.saveTheDateInfo {
+    align-self: baseline;
+    margin-top: 5px;
+}
+
+.saveTheDateInfo h1 {
+    text-align:center;
+    font-size: var(--s-font-size);
+}
+
+.saveTheDateInfo span {
+    font-size: var(--s-font-size);
+    font-weight: 900; 
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* navigation bar styling*/
+.navbar{
+
     background-color: var(--color-one);
     color: white;
     height: 10vh;
     min-height: 50px;
-    display: inline-block;
-    width: 100%;
+  
+
+    grid-column-start: left;
+    grid-column-end: end;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+
+
+    position: sticky;
+    bottom: 0px;
+
+    padding: 0px;
+    margin: 0px;
 }
 
-.navbartop > div {
+.main-nav {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    width:100%;
+    padding:0px;   
+}
+
+.active{
+    display: block;
+}
+
+
+.main-nav > li{
+    background-color: var(--color-one);
+    padding: 0px;
+    margin: 0px;
+    height: 10vh;
+    float: left;
+    width: 100%;
+    text-align: center;
+
+    position: relative;
+
+}
+
+.main-nav > li  > a:hover{
+    background-color: var(--color-two);
+    text-decoration: none;
+}
+
+.main-nav > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+
+    color: white;
+    padding:10px;
+    height: 100%;
+
+    text-decoration: none;
+}
+
+
+
+.navbar-toggle{
+    padding: 0px;
+    margin: 0px;
+    height: 10vh;
+    width: 40px;
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+.navbar > div {
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -98,7 +298,7 @@
     text-align: center;
 }
 
-.navbartop >  div > a {
+.navbar >  div > a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +310,7 @@
     height: 100%;
 }
 
-.navbartop > div  > a:hover{
+.navbar > div  > a:hover{
     background-color: var(--color-two);
     text-decoration: none;
 }
@@ -118,35 +318,153 @@
 
 
 
-.navbarbottom{
-    border: 1px solid blue;
-    position: sticky;
-    bottom: 0px;
-}
-
-
-
 /* end of navigation bar styling*/
 
-@media only screen and (max-width: 600px) {
-    .sidenav {
-	display:none;
-    }
 
+
+.content{
+  grid-column-start: left;
+  grid-column-end: end;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+
+  padding-left: 40px; 
+  padding-right: 40px;
 }
 
-@media only screen and (min-width: 600px) {
+
+.sideboard{
+  display: none;
+}
+
+
+
+@media only screen and (min-width: 450px) {
     /* For tablets: */
 
-    .sidenav {
-	height:100%;    
+
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 10vh;
+    z-index: 99;
+    display: none;
+}
+
+
+
+  .sideboard {
+    height:100%;
+    background-image:url('images/doubledoodle_gradient.png');
+    background-size: crop;
+    background-repeat:repeat-y;
+    flex-grow:1;
+    z-index:-1;
+    display:block;
+
+    grid-row-start: 3;
+    grid-row-end: span 1;
+  }
+
+  .leftBoard{
+    grid-column-start: left;
+    grid-column-end: middle;
+
+    transform:scaleX(-1);
+  }
+
+  .rightBoard{
+    grid-column-start: right;
+    grid-column-end: end;
+
+  }
+
+
+
+.content{
+  grid-column-start: middle;
+  grid-column-end: right;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  
+  padding-left: 40px; 
+  padding-right:40px;
+}
+
+
+
+
+
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    bottom: 0px;
+
     }
-    .navbartop{
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+
+
+
+
+
+
+    .navbar{
+
+       display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+
+
+    grid-column-start: left;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+
+
 	position: sticky;
 	top: 0px;
     }
-    .navbarbottom{
-	display: none;
+
+    .saveTheDateContainer {
+	flex-direction: row;
+	align-items: center;
+	max-height: 650px;
+	max-width: 800px;
+    }
+
+    .saveTheDateCounter {
+	width: 40%;
+	padding: 3%;
+    }
+    .saveTheDateCounter h1{
+	width: 160px;
+	font-size: var(--m-font-size);
+    }
+
+    .saveTheDateInfo  {
+	max-width: 60%;
+	padding: 3%;
+    }
+
+    .saveTheDateInfo h1 {
+	font-size: var(--m-font-size);
+    }
+
+    .saveTheDateInfo span {
+	font-size: var(--m-font-size);
     }
 
 }
@@ -154,18 +472,20 @@
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
-    .sidenav {
-	height:100%;
-	padding: 0px;
-	border: none;
-    }
-    .navbartop{
-	position: sticky;
-	top: 0px
-    }
-    .navbarbottom{
-	display: none;
+ 
+    .saveTheDateCounter h1{
+	vertical-align: top;
+	font-size: var(--l-font-size);
+	width: 180px;
     }
 
+
+    .saveTheDateInfo h1 {
+	font-size: var(--l-font-size);
+    }
+
+    .saveTheDateInfo span {
+	font-size: var(--l-font-size);
+    }
 }
 
