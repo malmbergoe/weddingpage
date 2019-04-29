@@ -3,62 +3,214 @@
 <head>
   <title>Mats &amp Karins Bröllop</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href="https://fonts.googleapis.com/css?family=Taviraj:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
- 
+<link href="https://fonts.googleapis.com/css?family=Faustina|Playfair+Display" rel="stylesheet"> 
   <link rel="stylesheet" href="stylesheet.css" >
   <script type="text/javascript" src="javascripts.js"></script>
+
 </head>
-<body style="margin: 0px;">
-
-<div class="saveTheDateBanner">
-  <div>SAVE THE DATE</div>
-</div>
-
-
-<div class="saveTheDateBackgroundImage">
-	  <img src="images/0kawaiimultimediadoodleartbygarbikw.jpg" alt="left shark is awesome!">
-</div>
-
-
-<div class="fullScreenGrid">
-  <div class="saveTheDateContainer">
-	  <div class="saveTheDateCounter">
-	      <h1 id="demo"></h1>
-	  </div>
-	  <div class="saveTheDateInfo">
-	    <h1 >
-	      Den <span> 31 Augusti</span>  dundrar vi av Bröllopsfesten som alla väntat på! <br>Mer info snart, men boka hela helgen...<br>
-	      <br>
-	      Hälsningar Mats&nbsp&&nbspKarin
-	    </h1>
-	  </div> 
-
-  </div>
-
-</div>
+<body style="width: 100%; height: 100%; overflow: scroll; padding:0px; margin:0px;">
 
 
 
 
 
-
-<div class="saveTheDateBackgroundImage" style="visibility: hidden;">
-      <div class="saveTheDateContainer">	
-	<div style="height: 10%"></div>
-	<div style="height: 80%;">
-	  <div class="saveTheDateCounter">
-	      <h1 id="demo"></h1>
-	  </div>
-	  <div class="saveTheDateInfo">
-	    <h1 >
-	      Den <span> 31 Augusti</span>  dundrar vi av Bröllopsfesten som alla väntat på! <br>Mer info snart, men boka hela helgen...
-	    </h1>
-	  </div>
-	</div>
-	<div style="height: 10%"></div>
+  <div class="grid-container-parent">
+    <!-- this is the top image-->
+    <div class="topImg">
+      <img src="images/vaddo_brygga.jpg" alt="left shark is awesome!">
+      <!-- <picture>
+        <source sizes="10vh" media="(min-width: 650px)" srcset="images/vaddo_brygga.jpg">
+        <source media="(min-width: 450px)" srcset="images/vaddo_brygga.jpg">
+        
+      </picture> -->
+      <div >
+        <h1>Välkommen till Mats och Karins bröllopsfest!!</h1>
+          <button class="button" onclick="document.getElementById('kontakt').scrollIntoView();">
+            Klart man vill komma!
+          </button>
       </div>
+    </div> <!-- end top image -->
+
+
+
+  <!--this is the navigation bar-->
+  <nav class="navbar">
+    <div class="navbar-toTop">
+      <div  onclick="scrollToTop()">
+        <img src="images/icons/drop_down_arrow_up__401612.png" height="50%" width="50px;">
+        Till Toppen
+      </div>
+    </div>
+
+    <ul class="main-nav" id="js-menu">
+      <li><a href="#hype"><img src="images/icons/27255.png" height="100%">Hype</a></li>
+      <li><a href="#boendet"><img src="images/icons/33622.png" height="100%">Stället</a></li>
+      <li><a href="#info"><img src="images/icons/light.png" height="100%">Bra Att Veta</a></li>
+      <li><a href="#presenter"><img src="images/icons/gift-512.png" height="100%">Presenter</a></li>
+      <li><a href="#kontakt"><img src="images/icons/mail-3.png" height="100%">Kontakt</a></li>
+    </ul>
+
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <img src="images/icons/menu-alt-512.png" style="height:100%; width:100%">
+    </span>
+
+<!--    <div style="float: right; width: 300px; text-align:right;">
+      <div id="demo" style="font-weight: 900;height:100%; display: flex; align-items: center; justify-content: center;" >Tid kvar:    d   h   m   s</div>
+    </div>-->
+  </nav>
+
+
+  <!-- this is the left sidebar -->
+  <div class="sideboard leftBoard">
+  </div> <!-- this is the end of left sidebar -->
+
+
+  <div class="sideboard rightBoard">
+  </div> <!-- this is the end of the right sidebar -->
+
+
+
+  <!--this is the main text body-->  
+  <div class="content"> 
+    <h1><a class="anchor" id="home"></a>Welcome</h1>
+    <p>Midsommar 2016. Det var då det hände. Vi träffades för första gången. Prat pratades, blickar möttes, snack snackades, solen lyste och pang tjofs: kärlek uppstod.<br>
+    Redan 1.5 månader efter första mötet blev vi sambos och sedan, efter ett år förlovade vi oss. Vi vill nu fortsätta vår kärleksmanifestation med tidernas bästa bröllopsfest. Själva bröllopsfesten är på lördagen (den 31 augusti), men boka gärna av hela helgen och kom och häng med oss från fredag den 30 augusti till och med söndagen den 1 september. Vi är så taggade att vi håller på att självantända, hoppas ni är det också!! Woop woop!!
+    </p>
+
+    <hr>
+    <h2><a class="anchor" id="hype"></a>Hype</h2>
+    <p>
+	Festen närmar sig med stormsteg... plötsligt så är det sommar och sedan vips - augusti och fest! Vi förstår att det här är såklart något som man vill basunera ut till allt och alla, från trasten i trädgården till mormor på torpet och alla människor där emellan. Så för att ni ska slippa framstå som galningar på mataffären när ni går med ett litet vackert leende och pratar om "festen med stort F" så har vi ordnat en liten stödgrupp på facebook. Facebookgruppen är hemlig, och vi lägger till er när ni OSA:t att ni kommer. Där kommer det att kommuniceras bilder, filmer, partytricks och mycket mer skoj som hjälper oss alla att komma i stämning inför detta eminenta evenemang! Ni kan likea, kommentera och snacka med likasinnade partyprissar. Awesome sauce!
+    </p>
+
+    <hr>
+    <h2><a class="anchor" id="boendet"></a>Stället</h2>
+    <p>
+    Eftersom vi träffades på Väddö så ska självklart bröllopsfesten även vara på väddö. Det tog lite tid att hitta rätt ställe, men direkt när vi hade varit ute och kikat på Väddö Kursgård kändes det toppen, här ville vi vara! Väddö kursgård är en liten stugby som ligger i mitten av ingenstans (typ) där det finns plats för max 80 personer att sova över. Vi kommer att ha stället för oss själva, så vi kan festa på best vi vill. När man känner att man fått nog kan man såklart dra sig tillbaka i sin stuga och finna den ro man behöver.<br>
+På kursgården finns allt från små tvåmannastugor till lite större vandrarhemsliknande byggnader. Vi kommer att fördela ut er alla på ett shysst boende och ni får reda på vilken stuga ni ska bo i vid ankomst. Vissa kommer att få ett eget badrum i en egen stuga och andra kommer att få dela. I stugan/rummet finns sängkläder samt handduk. Väddö kursgård ligger fint vid en vik till Ålands hav, så ta med badkläder. På anläggningen finns även en liten bastu och en vedeldad badtunna som kommer att hållas igång under helgen. Det finns en liten båt som man kan låna, men om du får feeling så är du varmt välkommen att ta med dig din SUP, jetski, egna lilla jolle, upplblåsbara badring eller varför inte bergochdalbanan som du köpte på blocket förra året och som nu ligger snyggt förpackad i garaget? För er som stannar hela helgen finns det massvis med tid för att chilla och mysa tillsammans.<br>
+
+Väddö ligger i Roslagens skärgård och det tar ca 1.5 timmare att köra bil till ön från Stockholm. Vill du se på en karta vart det ligger <a href="https://www.google.se/maps/dir//V%C3%A4dd%C3%B6+Kursg%C3%A5rd,+V%C3%A4dd%C3%B6/@59.9356874,18.8439398,13043m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x46f55564690a3afd:0x78880007e1d7875!2m2!1d18.913979!2d59.935706!3e2">Klicka här</a>. 
+
+    <h4>Hitta till Väddö Kursgård</h4>
+För dig som åker bil kan du fylla i din startposition <a href="https://www.google.se/maps/dir//V%C3%A4dd%C3%B6+Kursg%C3%A5rd,+V%C3%A4dd%C3%B6/@59.9356874,18.8439398,13043m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x46f55564690a3afd:0x78880007e1d7875!2m2!1d18.913979!2d59.935706!3e2">här</a> så öppnas en vägbeskrivning med Google Maps. Lättast är det såklart att ta sig ut med bil, men för er som tänkt ta er ut med kollektivtrafik går det också bra. Bussen heter 636 mot Östersjö och går från Norrtälje busstation.Hoppa av vid hållplatsen Rangarnö. Från hållplatsen är det ca 3 km promenad till Väddö Kursgård. Önskar ni bli hämtade vid hållplatsen kan vi försöka ordna det, ta kontakt med oss i god tid innan din ankomst. Fullständig tidtabell och information om bussresan hittar du på SL:s hemsida.<br>För er som inte vill åka kollektivt och som inte heller har möjlighet att åka i egen bil, hör av er så hjälper vi er att koordinera samåkning.
+    </p>
+
+
+    <hr>
+    <h2><a class="anchor" id="info"></a>Bra Att Veta</h2>
+    <h4>Klädsel</h4>
+    <p>
+På fredagen och söndagen kör vi casual (och badkläder) men för festen på lördagen ska vi vara lite stiligare. Riktlinje: klädkod kavaj. Känner du dig inte helt bekväm i kavaj och hemskt gärna vill ha något annat, kör på det. Vi är inte supernitiska
+
+ ser vi gärna att man klär upp sig lite. Uppklätt med flipflops
+    </p>
+    <h4>Vigsel</h4>
+    <p>Vigsel kommer ske innan bröllopshelgen på hemlig ort/ställe och på hemligt datum utan några gäster. Vi kommer däremot självklart att dela med oss av minnen från vår vigseln under helgen, så det nästan känns som ni varit på plats.
+    </p>
+    <h4>Dryck</h4>
+    På lördagen kommer vi att bjuda på dryck till maten samt en välkomstskål. Utöver detta så har Väddö kursgård sin bar öppen, där ni kan köpa dryck.
+    <p>
+
+    </p>
+    <h4>Barn</h4>
+    <p>
+	  Barn är underbara, men denna helgen får dom stanna hemma. Hela helgen är barnfri, dock med undantag för småknoddar som fortfarande ammar.
+    </p>
+    <h4>Tal</h4>
+    <p>
+    Om ni önskar hålla tal eller något annat under lördagen ska detta anmälas till någon av våra toastmasters i god tid innan festen. Våra toastmasters bestämmer, men som riktlinje ser vi att anföranden är korta (max 2 min). Kontaktuppgifter till toastmasters finns längst ner på sidan.
+    </p>
+    <h4>Kostnad</h4>
+    <p>
+För er som kommer spendera hela helgen med oss (fre-sön) tar vi ut en kostnad på 700 kr per person för övernattning och mat. För er som bara kommer på festen på lördagen (inkl övernattning) kostar det 500 kr per person. Efter att ni anmält er, överför pengarna till vårt konto på handelsebanken 6153-544940741. Skriv in ert/era namn som meddelande så att vi kan se vart pengarna kommer ifrån. Det går även bra att swisha på 073-0510476.
+    </p>
+    <h4>Schema</h4>
+    <p>Fredagen börjar med en enklare middag kring kl 19 och sedan blir det enkelt och hederligt häng i restaurangen/baren, vid stranden, i bastun och i badtunnan. Lördagen börjar vi med en härlig frukost och fortsätter sedan mysa på anläggningen. Vi bjussar på en lättare lunch för er som har sovit över från fredagen och sedan kl 14:00 kör festligheterna igång. Alla gäster ska då vara ombytta, incheckade och klara! Vi möts på stora terassen och våra toastmasters kommer guida er genom dagen och kvällen. På söndagen bjuds det på frukost mellan kl 9-11 och vi hoppas så många som möjligt vill vara kvar på anläggningen och njuta av söndagen med oss. 
+    </p>
+
+    <hr>
+    <h2><a class="anchor" id="presenter"></a>Presenter</h2>
+    <p>
+    Present är inget måste, bästa presenten är trots allt att få träffa er alla och att ni tackar ja till att fira med oss. Vill ni ändå ge något i alla fall så uppskattar vi bidrag till vår bröllopsresa. Bröllopsresan är fortfarande i planneringsstadiet, men så fort vi bestämt oss kommer vi att förmedla det här och via facebookgruppen.
+
+
+    </p>
+
+    <hr>
+    <h2><a class="anchor" id="kontakt"></a>Kontakt</h2>
+    <p>För att komma i kontakt med brud eller brudgum:<br>
+Karin 073-0510476<br>
+Mats 070-9665422<br>
+info@bastabrollopet2019.se
+<br>
+<br>
+
+För kontakt med toastmasters:<br>
+Våra eminenta toastmasters är Zakarias Hauffman och Patrik Säker. Dom når man genom mail till toastmaster@bastabrollopet2019.se<br>
+<br>
+OSA till vår info@bastabrollopet2019.se och ange vem/vilka ni är som kommer, vilka dagar ni kommer att närvara samt eventuella matallergier. När ni OSA:t, sätt även samtidigt över pengar eller swisha Karin. När ni gort detta är anmälan till bröllopsfesten klar och ni kommer att få ett bekräftelsemail tillbaka samt bli inbjudna till facebookgruppen. 
+<br>
+<br>
+konto på handelsebanken 6153-544940741. (glöm inte att skriva avsändare som meddelande)<br>
+Det går även bra att swisha på 073-0510476.
+    </p>
+    <hr>
+  </div> <!--end of content body -->
+
+
+
+
+
+</div> <!-- end container parent-->
+
+
+
+
+
+
+
+
+  <button class="toTop button" onclick="scrollToTop()" id="toTop">
+    Upp
+  </button>
 </div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  var tabletWidth = 450;
+  if(document.documentElement.clientWidth >= tabletWidth || 
+     window.innerWidth >= tabletWidth ||
+    document.body.clientWidth >= tabletWidth ){
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("toTop").style.display = "block";
+    } else {
+        document.getElementById("toTop").style.display = "none";
+    }
+   } else {
+        document.getElementById("toTop").style.display = "none";
+   }
+}
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
+
+
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+
+
+</script>
+
 </body>
 </html>

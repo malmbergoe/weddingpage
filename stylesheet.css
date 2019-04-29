@@ -217,7 +217,7 @@ vertical-align: middle;
     background-color: var(--color-one);
     color: white;
     
-    height: 50px;
+    height: 80px;
   
 
     grid-column-start: left;
@@ -226,10 +226,13 @@ vertical-align: middle;
     grid-row-end: span 1;
 
 
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0px;
 
-    padding: 0px;
+
+    
+    padding-bottom: 20px;
     margin: 0px;
 }
 
