@@ -1,2 +1,6 @@
 # ignore emacs tmp files
 *~
+\#*\#
+
+# ignore the untracked director
+untrackedMaterial
