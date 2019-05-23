@@ -1,9 +1,13 @@
 Mainpage:
 	för mobil
-	- fixa bottom navigation bar
+        - när man klickar någon stanns ska popup meny försvinna
+        - fixa snyggare icon till knapp mot toppen
+
+        för större
 - ta bort överflödiga fonter ur main.html
 
 allmänt:
+- gör om sidebar image så att det inte blir vita kanter
 - sätt upp mail
      toastmaster@bastabrollopet2019.se
      info@bastabrollopet2019.se
@@ -21,28 +25,19 @@ allmänt:
 
 
 
-- fixa bilderna i sidebar
 - deploya till github
 - deploya till amazon
 - formulär för att osa
 - facebook-sida
 - fixa så att sidebar inte glitchar mellan tilingen
-- centera content i topImg
-- beslut om footer
 - icon/emblem?
 - fixa rosa färg till att matcha palett i sidebar
 - centrera knappar i topnav bättre?
-- bygga för mobil
-  - fixa navbar
-  - fixa ikoner till navbar
 - bug: counter hamnar utanför topbar om man minskar rutan
 
 
-- gör grundläggande boxlayout med css-grid.
 - sätt fontstorlek konstant per device.(?)
 - boxa in content med maxwidth och overflow
-- lila container som flexbox för att nå bra centrering (container- display:flex; children ärver. sätt max-mått och min mått)
-- för att fylla hela fönstret, sätt fix referens till webläsarens hör (genom att använda width/height 100% (body alltså))
 - använd firefox's webdesign mode (ish)
 - navänd inspector i webläsaren
 
