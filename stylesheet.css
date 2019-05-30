@@ -103,103 +103,6 @@
 }
 
 
-.saveTheDateBanner {
-top: 40px;
-left: -180px;
-transform: rotate(-45deg);
--webkit-transform(-45deg);
-background: white;
-position: fixed;
-z-index: 1000;
-max-height: 80px;
-min-height: 40px;
-
-height: 20vw;
-width: 500px;
-
-display: flex;
-display: -webkit-flex;
-vertical-align: middle;
-
-}
-
-.saveTheDateBanner div {
-    text-align: center;
-    margin:auto;
-    z-index: 1001;
-    font-size: 20px;
-    font-weight: 900; 
-}
-
-.saveTheDateBackgroundImage {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    overflow:hidden;
-    height: 100;
-    width: 100%;
-    min-width: 200px;
-    z-index:-1;
-}
-
-.saveTheDateBackgroundImage img{
-    object-fit: scale-down;
-    opacity: 0.5;
-}
-
-
-.saveTheDateContainer {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: center;
-    height: 100%;
-    max-height: 800px;
-    max-width: 400px;
-    width: 100%;
-    color: white; 
-    background-color: var(--color-one);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3%;
-}
-
-.saveTheDateCounter {
-    min-width: 180px;
-    width: 100%;
-    max-height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    overflow: visible;
-    align-self: baseline;
-
-}
-
-.saveTheDateCounter h1{
-    text-align: left;
-    vertical-align: top;
-    font-size: var(--s-font-size);
-    width: 120px;
-}
-
-.saveTheDateInfo {
-    align-self: baseline;
-    margin-top: 5px;
-}
-
-.saveTheDateInfo h1 {
-    text-align:center;
-    font-size: var(--s-font-size);
-}
-
-.saveTheDateInfo span {
-    font-size: var(--s-font-size);
-    font-weight: 900; 
-    color:black;
-}
-
 
 
 
@@ -469,54 +372,10 @@ vertical-align: middle;
 	top: 0px;
     }
 
-    .saveTheDateContainer {
-	flex-direction: row;
-	align-items: center;
-	max-height: 650px;
-	max-width: 800px;
-    }
-
-    .saveTheDateCounter {
-	width: 40%;
-	padding: 3%;
-    }
-    .saveTheDateCounter h1{
-	width: 160px;
-	font-size: var(--m-font-size);
-    }
-
-    .saveTheDateInfo  {
-	max-width: 60%;
-	padding: 3%;
-    }
-
-    .saveTheDateInfo h1 {
-	font-size: var(--m-font-size);
-    }
-
-    .saveTheDateInfo span {
-	font-size: var(--m-font-size);
-    }
 
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
-
- 
-    .saveTheDateCounter h1{
-	vertical-align: top;
-	font-size: var(--l-font-size);
-	width: 180px;
-    }
-
-
-    .saveTheDateInfo h1 {
-	font-size: var(--l-font-size);
-    }
-
-    .saveTheDateInfo span {
-	font-size: var(--l-font-size);
-    }
+    /* For desktop: */ 
 }
 
